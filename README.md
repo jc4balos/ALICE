@@ -4,8 +4,8 @@
 Call ALICE by her saying "ALICE"
 
 ### Funtions:
-  -Wikipedia
-  -Time
-  -Playing Sound
-  -Shutdown
+  - Wikipedia
+  - Time
+  - Playing Sound
+  - Shutdown
 
