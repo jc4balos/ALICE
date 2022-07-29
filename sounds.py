@@ -1,5 +1,4 @@
 from playsound import playsound
-import Listener
 
 def soundListening():
     playsound('./sounds/listening.mp3')

@@ -1,19 +1,24 @@
-import pyttsx3
+import requests
+from bs4 import BeautifulSoup
 
-engine = pyttsx3.init()
-def onStart(name):
-   print ('starting', name)
-def onWord(name, location, length):
-   print ('word', name, location, length)
-def onEnd(name, completed):
-   print ('finishing', name, completed)
-   if name == 'fox':
-      engine.say('What a lazy dog!', 'dog')
-   elif name == 'dog':
-      engine.endLoop()
-engine = pyttsx3.init()
-engine.connect('started-utterance', onStart)
-engine.connect('started-word', onWord)
-engine.connect('finished-utterance', onEnd)
-engine.say('The quick brown fox jumped over the lazy dog.', 'fox')
-engine.startLoop()
+
+def query():
+    user_query = input('Enter your query: ')
+
+    URL = "https://www.google.com/search?q=" + user_query
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36'
+    }
+
+    page = requests.get(URL, headers=headers)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    result = soup.find(class_='qv3Wpe').get_text()
+    print(result)
+
+
+while True:
+    try:
+        query()
+    except Exception:
+        print('Sorry no result, please be clear')

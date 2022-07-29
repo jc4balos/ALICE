@@ -1,44 +1,87 @@
-#Functions
+# This File contains the commands and functions of ALICE
+
+
+
+
+# Functions
 import pywhatkit
 import datetime
-import wikipedia
 from datetime import date
 
+import Google
 import Listener
 import sounds
 
-
 def run(): #insert via priotiy command keyword
     try:
-        if 'alice' in Listener.take_command():
-            global textCommand
-    except TypeError:
-        pass
-    finally:
+
+        textCommand = Listener.take_command()
+        print(textCommand)
         try:
-            textCommand = Listener.take_command().replace('alice', ' ')
             print("ALICE is listening...")
-            print(textCommand)
+
             if 'play' in textCommand:
-                playSong()
+                sounds.soundListening()
+                song = textCommand.replace('play', '')
+                Listener.talk('playing ' + song)
+                pywhatkit.playonyt(song)
+                sounds.soundDone()
+
+            elif 'date' in textCommand:
+                sounds.soundListening()
+                today = date.today()
+                todayDate = today.strftime("%B %d, %Y")
+                Listener.talk('The Date todat is ' + todayDate)
+                sounds.soundDone()
+
             elif 'time' in textCommand:
-                checkTime()
+                sounds.soundListening()
+                time = datetime.datetime.now().strftime('%I:%M %p')
+                Listener.talk('Current time is ' + time)
+                sounds.soundDone()
+
             elif 'what' in textCommand:
-                wikiPedia()
+                sounds.soundListening()
+                try:
+                    whatQuestion = textCommand.replace('what', ' ')
+                    info = Google.query(whatQuestion)
+                    Listener.talk(info)
+                    sounds.soundDone()
+                except:
+                    Listener.talk("I cannot understand your query.")
+                    sounds.soundDone()
+
+            elif 'calculate' in textCommand: # fix this
+                equation = textCommand.replace('calculate', '')
+                try:
+                    answer = Google.calculate(equation)
+                    Listener.talk(answer)
+                    sounds.soundDone()
+                except:
+                    Listener.talk("I'm sorry! I cannot calculate that.")
+                    sounds.soundDone()
+
             elif 'shutdown' in textCommand:
-                shutDown()
+                sounds.soundListening()
+                Listener.talk('Initiating Shutdown Sequence')
+                print("Initiating Shutdown Sequence...")
+                sounds.soundShutdown()
+                quit()
+
             else:
-                Listener.talk("I'm sorry. Can you repeat that?") #fix engaging when alice is not called
+                Listener.talk("I'm sorry. Can you repeat that?")  # fix engaging when alice is not called
+
         except AttributeError:
             pass
 
-
+    except TypeError:
+        pass
 
 def initialize():
+    sounds.soundListening()
     Listener.talk("Initializing ALICE ...")
 
 def greetings():
-    sounds.soundListening()
     today = date.today()
     todayDate = today.strftime("%B %d, %Y")
     hour = datetime.datetime.now().hour
@@ -58,42 +101,6 @@ def greetings():
     sounds.soundDone()
 
 
-
-def shutDown():
-    sounds.soundListening()
-    Listener.talk('Initiating Shutdown Sequence')
-    print("Initiating Shutdown Sequence...")
-    sounds.soundShutdown()
-    quit()
-
-def playSong():
-    sounds.soundListening()
-    song = textCommand.replace('play', '')
-    Listener.talk('playing ' + song)
-    pywhatkit.playonyt(song)
-    sounds.soundDone()
-
-
-
-def checkTime():
-    sounds.soundListening()
-    time = datetime.datetime.now().strftime('%I:%M %p')
-    Listener.talk('Current time is ' + time)
-    sounds.soundDone()
-
-
-def wikiPedia():
-    sounds.soundListening()
-    try:
-        whatQuestion = textCommand.replace('what', '')
-        info = wikipedia.summary(whatQuestion, 1)
-        print(info)
-        Listener.talk(info)
-        sounds.soundDone()
-
-    except:
-        Listener.talk("This is not available on wikipedia")
-        sounds.soundDone()
 
 
 
