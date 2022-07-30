@@ -167,11 +167,10 @@ imported by:
 
 <div class="node">
   <a name="run.py"></a>
-  <a target="code" href="///D:/Documents/Repositories/DesktopAssistant/run.py" type="text/plain"><tt>run.py</tt></a>
+  <a target="code" href="///D:/Documents/Repositories/ALICE/run.py" type="text/plain"><tt>run.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
     <a href="#ALICE">ALICE</a>
- &#8226;   <a href="#Listener">Listener</a>
  &#8226;   <a href="#_collections_abc">_collections_abc</a>
  &#8226;   <a href="#_weakrefset">_weakrefset</a>
  &#8226;   <a href="#abc">abc</a>
@@ -609,7 +608,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>'org.python'</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#copy">copy</a>
+    <a href="#pickle">pickle</a>
  &#8226;   <a href="#setuptools.sandbox">setuptools.sandbox</a>
  &#8226;   <a href="#xml.sax">xml.sax</a>
 
@@ -721,14 +720,14 @@ imported by:
 
 <div class="node">
   <a name="ALICE"></a>
-  <a target="code" href="///D:/Documents/Repositories/DesktopAssistant/ALICE.py" type="text/plain"><tt>ALICE</tt></a>
+  <a target="code" href="///D:/Documents/Repositories/ALICE/ALICE.py" type="text/plain"><tt>ALICE</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#Listener">Listener</a>
+    <a href="#Google">Google</a>
+ &#8226;   <a href="#Listener">Listener</a>
  &#8226;   <a href="#datetime">datetime</a>
  &#8226;   <a href="#pywhatkit">pywhatkit</a>
  &#8226;   <a href="#sounds">sounds</a>
- &#8226;   <a href="#wikipedia">wikipedia</a>
 
   </div>
   <div class="import">
@@ -776,8 +775,26 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="Google"></a>
+  <a target="code" href="///D:/Documents/Repositories/ALICE/Google.py" type="text/plain"><tt>Google</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#bs4">bs4</a>
+ &#8226;   <a href="#requests">requests</a>
+ &#8226;   <a href="#sounds">sounds</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#ALICE">ALICE</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="Listener"></a>
-  <a target="code" href="///D:/Documents/Repositories/DesktopAssistant/Listener.py" type="text/plain"><tt>Listener</tt></a>
+  <a target="code" href="///D:/Documents/Repositories/ALICE/Listener.py" type="text/plain"><tt>Listener</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#pyttsx3">pyttsx3</a>
@@ -787,8 +804,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#ALICE">ALICE</a>
- &#8226;   <a href="#run.py">run.py</a>
- &#8226;   <a href="#sounds">sounds</a>
 
   </div>
 
@@ -3491,8 +3506,7 @@ imported by:
   <a name="_multibytecodec"></a>
   <tt>_multibytecodec</tt> <span class="moduletype"><i>(builtin module)</i></span>  <div class="import">
 imported by:
-    <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#encodings.big5">encodings.big5</a>
+    <a href="#encodings.big5">encodings.big5</a>
  &#8226;   <a href="#encodings.big5hkscs">encodings.big5hkscs</a>
  &#8226;   <a href="#encodings.cp932">encodings.cp932</a>
  &#8226;   <a href="#encodings.cp949">encodings.cp949</a>
@@ -5274,7 +5288,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#bs4.builder">bs4.builder</a>
+    <a href="#Google">Google</a>
+ &#8226;   <a href="#bs4.builder">bs4.builder</a>
  &#8226;   <a href="#bs4.builder._html5lib">bs4.builder._html5lib</a>
  &#8226;   <a href="#bs4.dammit">bs4.dammit</a>
  &#8226;   <a href="#bs4.element">bs4.element</a>
@@ -5300,9 +5315,7 @@ imports:
  &#8226;   <a href="#bs4.element">bs4.element</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#warnings">warnings</a>
 
   </div>
   <div class="import">
@@ -5393,10 +5406,9 @@ imports:
     <a href="#bs4">bs4</a>
  &#8226;   <a href="#cchardet">cchardet</a>
  &#8226;   <a href="#chardet">chardet</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
  &#8226;   <a href="#codecs">codecs</a>
- &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#html.entities">html.entities</a>
+ &#8226;   <a href="#iconv_codec">iconv_codec</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#string">string</a>
@@ -5626,264 +5638,783 @@ imported by:
 
 <div class="node">
   <a name="chardet"></a>
-  <a target="code" href="" type="text/plain"><tt>chardet</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#bs4.dammit">bs4.dammit</a>
- &#8226;   <a href="#requests">requests</a>
- &#8226;   <a href="#requests.compat">requests.compat</a>
- &#8226;   <a href="#requests.packages">requests.packages</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="charset_normalizer"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/__init__.py" type="text/plain"><tt>charset_normalizer</tt></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/__init__.py" type="text/plain"><tt>chardet</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#charset_normalizer.version">charset_normalizer.version</a>
- &#8226;   <a href="#logging">logging</a>
+    <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
+ &#8226;   <a href="#chardet.version">chardet.version</a>
 
   </div>
   <div class="import">
 imported by:
     <a href="#bs4.dammit">bs4.dammit</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.assets">charset_normalizer.assets</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#charset_normalizer.version">charset_normalizer.version</a>
+ &#8226;   <a href="#chardet.big5freq">chardet.big5freq</a>
+ &#8226;   <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.escprober">chardet.escprober</a>
+ &#8226;   <a href="#chardet.escsm">chardet.escsm</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrfreq">chardet.euckrfreq</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwfreq">chardet.euctwfreq</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312freq">chardet.gb2312freq</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.hebrewprober">chardet.hebrewprober</a>
+ &#8226;   <a href="#chardet.jisfreq">chardet.jisfreq</a>
+ &#8226;   <a href="#chardet.jpcntx">chardet.jpcntx</a>
+ &#8226;   <a href="#chardet.langbulgarianmodel">chardet.langbulgarianmodel</a>
+ &#8226;   <a href="#chardet.langgreekmodel">chardet.langgreekmodel</a>
+ &#8226;   <a href="#chardet.langhebrewmodel">chardet.langhebrewmodel</a>
+ &#8226;   <a href="#chardet.langrussianmodel">chardet.langrussianmodel</a>
+ &#8226;   <a href="#chardet.langthaimodel">chardet.langthaimodel</a>
+ &#8226;   <a href="#chardet.langturkishmodel">chardet.langturkishmodel</a>
+ &#8226;   <a href="#chardet.latin1prober">chardet.latin1prober</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+ &#8226;   <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
+ &#8226;   <a href="#chardet.version">chardet.version</a>
  &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.compat">requests.compat</a>
- &#8226;   <a href="#requests.packages">requests.packages</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.api"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/api.py" type="text/plain"><tt>charset_normalizer.api</tt></a>
+  <a name="chardet.big5freq"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/big5freq.py" type="text/plain"><tt>chardet.big5freq</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#ntpath">ntpath</a>
- &#8226;   <a href="#os">os</a>
- &#8226;   <a href="#typing">typing</a>
+    <a href="#chardet">chardet</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
+    <a href="#chardet.chardistribution">chardet.chardistribution</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.assets"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/assets/__init__.py" type="text/plain"><tt>charset_normalizer.assets</tt></a>
-<span class="moduletype">Package</span>  <div class="import">
+  <a name="chardet.big5prober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/big5prober.py" type="text/plain"><tt>chardet.big5prober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#collections">collections</a>
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.cd"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/cd.py" type="text/plain"><tt>charset_normalizer.cd</tt></a>
+  <a name="chardet.chardistribution"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/chardistribution.py" type="text/plain"><tt>chardet.chardistribution</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.assets">charset_normalizer.assets</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#codecs">codecs</a>
- &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#importlib">importlib</a>
- &#8226;   <a href="#typing">typing</a>
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.big5freq">chardet.big5freq</a>
+ &#8226;   <a href="#chardet.euckrfreq">chardet.euckrfreq</a>
+ &#8226;   <a href="#chardet.euctwfreq">chardet.euctwfreq</a>
+ &#8226;   <a href="#chardet.gb2312freq">chardet.gb2312freq</a>
+ &#8226;   <a href="#chardet.jisfreq">chardet.jisfreq</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
+    <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.constant"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/constant.py" type="text/plain"><tt>charset_normalizer.constant</tt></a>
+  <a name="chardet.charsetgroupprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/charsetgroupprober.py" type="text/plain"><tt>chardet.charsetgroupprober</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.assets">charset_normalizer.assets</a>
- &#8226;   <a href="#codecs">codecs</a>
- &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
- &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#typing">typing</a>
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+ &#8226;   <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.legacy"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/legacy.py" type="text/plain"><tt>charset_normalizer.legacy</tt></a>
+  <a name="chardet.charsetprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/charsetprober.py" type="text/plain"><tt>chardet.charsetprober</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#typing">typing</a>
- &#8226;   <a href="#warnings">warnings</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#charset_normalizer">charset_normalizer</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="charset_normalizer.md"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/md.py" type="text/plain"><tt>charset_normalizer.md</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#typing">typing</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="charset_normalizer.models"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/models.py" type="text/plain"><tt>charset_normalizer.models</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#collections">collections</a>
- &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
- &#8226;   <a href="#hashlib">hashlib</a>
- &#8226;   <a href="#json">json</a>
- &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#typing">typing</a>
- &#8226;   <a href="#warnings">warnings</a>
-
-  </div>
-  <div class="import">
-imported by:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="charset_normalizer.utils"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/utils.py" type="text/plain"><tt>charset_normalizer.utils</tt></a>
-<span class="moduletype">SourceModule</span>  <div class="import">
-imports:
-    <a href="#_multibytecodec">_multibytecodec</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#codecs">codecs</a>
- &#8226;   <a href="#encodings.aliases">encodings.aliases</a>
- &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#importlib">importlib</a>
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#typing">typing</a>
- &#8226;   <a href="#unicodedata">unicodedata</a>
- &#8226;   <a href="#unicodedata2">unicodedata2</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
+    <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.escprober">chardet.escprober</a>
+ &#8226;   <a href="#chardet.hebrewprober">chardet.hebrewprober</a>
+ &#8226;   <a href="#chardet.latin1prober">chardet.latin1prober</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
 
   </div>
 
 </div>
 
 <div class="node">
-  <a name="charset_normalizer.version"></a>
-  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/charset_normalizer/version.py" type="text/plain"><tt>charset_normalizer.version</tt></a>
+  <a name="chardet.codingstatemachine"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/codingstatemachine.py" type="text/plain"><tt>chardet.codingstatemachine</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#charset_normalizer">charset_normalizer</a>
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#logging">logging</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer">charset_normalizer</a>
+    <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.escprober">chardet.escprober</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.cp949prober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/cp949prober.py" type="text/plain"><tt>chardet.cp949prober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.enums"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/enums.py" type="text/plain"><tt>chardet.enums</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.escprober">chardet.escprober</a>
+ &#8226;   <a href="#chardet.escsm">chardet.escsm</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.hebrewprober">chardet.hebrewprober</a>
+ &#8226;   <a href="#chardet.latin1prober">chardet.latin1prober</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.escprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/escprober.py" type="text/plain"><tt>chardet.escprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.escsm">chardet.escsm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.universaldetector">chardet.universaldetector</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.escsm"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/escsm.py" type="text/plain"><tt>chardet.escsm</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.escprober">chardet.escprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.eucjpprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/eucjpprober.py" type="text/plain"><tt>chardet.eucjpprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.jpcntx">chardet.jpcntx</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.euckrfreq"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/euckrfreq.py" type="text/plain"><tt>chardet.euckrfreq</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.chardistribution">chardet.chardistribution</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.euckrprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/euckrprober.py" type="text/plain"><tt>chardet.euckrprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.euctwfreq"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/euctwfreq.py" type="text/plain"><tt>chardet.euctwfreq</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.chardistribution">chardet.chardistribution</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.euctwprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/euctwprober.py" type="text/plain"><tt>chardet.euctwprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.gb2312freq"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/gb2312freq.py" type="text/plain"><tt>chardet.gb2312freq</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.chardistribution">chardet.chardistribution</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.gb2312prober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/gb2312prober.py" type="text/plain"><tt>chardet.gb2312prober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.hebrewprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/hebrewprober.py" type="text/plain"><tt>chardet.hebrewprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.jisfreq"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/jisfreq.py" type="text/plain"><tt>chardet.jisfreq</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.chardistribution">chardet.chardistribution</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.jpcntx"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/jpcntx.py" type="text/plain"><tt>chardet.jpcntx</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langbulgarianmodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langbulgarianmodel.py" type="text/plain"><tt>chardet.langbulgarianmodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langgreekmodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langgreekmodel.py" type="text/plain"><tt>chardet.langgreekmodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langhebrewmodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langhebrewmodel.py" type="text/plain"><tt>chardet.langhebrewmodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langrussianmodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langrussianmodel.py" type="text/plain"><tt>chardet.langrussianmodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langthaimodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langthaimodel.py" type="text/plain"><tt>chardet.langthaimodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.langturkishmodel"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/langturkishmodel.py" type="text/plain"><tt>chardet.langturkishmodel</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.latin1prober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/latin1prober.py" type="text/plain"><tt>chardet.latin1prober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.universaldetector">chardet.universaldetector</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.mbcharsetprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/mbcharsetprober.py" type="text/plain"><tt>chardet.mbcharsetprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.mbcsgroupprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/mbcsgroupprober.py" type="text/plain"><tt>chardet.mbcsgroupprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.universaldetector">chardet.universaldetector</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.mbcssm"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/mbcssm.py" type="text/plain"><tt>chardet.mbcssm</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.big5prober">chardet.big5prober</a>
+ &#8226;   <a href="#chardet.cp949prober">chardet.cp949prober</a>
+ &#8226;   <a href="#chardet.eucjpprober">chardet.eucjpprober</a>
+ &#8226;   <a href="#chardet.euckrprober">chardet.euckrprober</a>
+ &#8226;   <a href="#chardet.euctwprober">chardet.euctwprober</a>
+ &#8226;   <a href="#chardet.gb2312prober">chardet.gb2312prober</a>
+ &#8226;   <a href="#chardet.sjisprober">chardet.sjisprober</a>
+ &#8226;   <a href="#chardet.utf8prober">chardet.utf8prober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.sbcharsetprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/sbcharsetprober.py" type="text/plain"><tt>chardet.sbcharsetprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#collections">collections</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.langbulgarianmodel">chardet.langbulgarianmodel</a>
+ &#8226;   <a href="#chardet.langgreekmodel">chardet.langgreekmodel</a>
+ &#8226;   <a href="#chardet.langhebrewmodel">chardet.langhebrewmodel</a>
+ &#8226;   <a href="#chardet.langrussianmodel">chardet.langrussianmodel</a>
+ &#8226;   <a href="#chardet.langthaimodel">chardet.langthaimodel</a>
+ &#8226;   <a href="#chardet.langturkishmodel">chardet.langturkishmodel</a>
+ &#8226;   <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.sbcsgroupprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/sbcsgroupprober.py" type="text/plain"><tt>chardet.sbcsgroupprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.hebrewprober">chardet.hebrewprober</a>
+ &#8226;   <a href="#chardet.langbulgarianmodel">chardet.langbulgarianmodel</a>
+ &#8226;   <a href="#chardet.langgreekmodel">chardet.langgreekmodel</a>
+ &#8226;   <a href="#chardet.langhebrewmodel">chardet.langhebrewmodel</a>
+ &#8226;   <a href="#chardet.langrussianmodel">chardet.langrussianmodel</a>
+ &#8226;   <a href="#chardet.langthaimodel">chardet.langthaimodel</a>
+ &#8226;   <a href="#chardet.langturkishmodel">chardet.langturkishmodel</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.universaldetector">chardet.universaldetector</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.sjisprober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/sjisprober.py" type="text/plain"><tt>chardet.sjisprober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.chardistribution">chardet.chardistribution</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.jpcntx">chardet.jpcntx</a>
+ &#8226;   <a href="#chardet.mbcharsetprober">chardet.mbcharsetprober</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.universaldetector"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/universaldetector.py" type="text/plain"><tt>chardet.universaldetector</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetgroupprober">chardet.charsetgroupprober</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.escprober">chardet.escprober</a>
+ &#8226;   <a href="#chardet.latin1prober">chardet.latin1prober</a>
+ &#8226;   <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+ &#8226;   <a href="#chardet.sbcsgroupprober">chardet.sbcsgroupprober</a>
+ &#8226;   <a href="#codecs">codecs</a>
+ &#8226;   <a href="#logging">logging</a>
+ &#8226;   <a href="#re">re</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet">chardet</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.utf8prober"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/utf8prober.py" type="text/plain"><tt>chardet.utf8prober</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.enums">chardet.enums</a>
+ &#8226;   <a href="#chardet.mbcssm">chardet.mbcssm</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet.mbcsgroupprober">chardet.mbcsgroupprober</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="chardet.version"></a>
+  <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/chardet/version.py" type="text/plain"><tt>chardet.version</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#chardet">chardet</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#chardet">chardet</a>
 
   </div>
 
@@ -6450,9 +6981,7 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.misc">PyInstaller.utils.misc</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#bs4.dammit">bs4.dammit</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
  &#8226;   <a href="#click._compat">click._compat</a>
  &#8226;   <a href="#encodings">encodings</a>
  &#8226;   <a href="#encodings.ascii">encodings.ascii</a>
@@ -6661,12 +7190,8 @@ imported by:
  &#8226;   <a href="#bs4">bs4</a>
  &#8226;   <a href="#bs4.builder">bs4.builder</a>
  &#8226;   <a href="#bs4.builder._lxml">bs4.builder._lxml</a>
- &#8226;   <a href="#bs4.dammit">bs4.dammit</a>
  &#8226;   <a href="#bs4.element">bs4.element</a>
- &#8226;   <a href="#charset_normalizer.assets">charset_normalizer.assets</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
+ &#8226;   <a href="#chardet.sbcharsetprober">chardet.sbcharsetprober</a>
  &#8226;   <a href="#click.core">click.core</a>
  &#8226;   <a href="#click.parser">click.parser</a>
  &#8226;   <a href="#collections.abc">collections.abc</a>
@@ -8098,8 +8623,8 @@ imported by:
   <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/copy.py" type="text/plain"><tt>copy</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#'org.python'">'org.python'</a>
- &#8226;   <a href="#copyreg">copyreg</a>
+    <a href="#copyreg">copyreg</a>
+ &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#weakref">weakref</a>
 
@@ -10171,10 +10696,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#encodings">encodings</a>
+    <a href="#encodings">encodings</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#run.py">run.py</a>
 
@@ -13190,9 +13712,6 @@ imported by:
  &#8226;   <a href="#asyncio.selector_events">asyncio.selector_events</a>
  &#8226;   <a href="#asyncio.tasks">asyncio.tasks</a>
  &#8226;   <a href="#asyncio.threads">asyncio.threads</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
  &#8226;   <a href="#click.core">click.core</a>
  &#8226;   <a href="#click.decorators">click.decorators</a>
  &#8226;   <a href="#click.utils">click.utils</a>
@@ -13611,7 +14130,6 @@ imported by:
     <a href="#PyInstaller.building.icon">PyInstaller.building.icon</a>
  &#8226;   <a href="#PyInstaller.building.utils">PyInstaller.building.utils</a>
  &#8226;   <a href="#PyInstaller.utils.win32.winmanifest">PyInstaller.utils.win32.winmanifest</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
  &#8226;   <a href="#flask.sessions">flask.sessions</a>
  &#8226;   <a href="#hmac">hmac</a>
  &#8226;   <a href="#itsdangerous.signer">itsdangerous.signer</a>
@@ -13920,6 +14438,17 @@ imported by:
 </div>
 
 <div class="node">
+  <a name="iconv_codec"></a>
+  <a target="code" href="" type="text/plain"><tt>iconv_codec</tt></a>
+<span class="moduletype">MissingModule</span>  <div class="import">
+imported by:
+    <a href="#bs4.dammit">bs4.dammit</a>
+
+  </div>
+
+</div>
+
+<div class="node">
   <a name="idna"></a>
   <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/idna/__init__.py" type="text/plain"><tt>idna</tt></a>
 <span class="moduletype">Package</span>  <div class="import">
@@ -13927,7 +14456,6 @@ imports:
     <a href="#idna">idna</a>
  &#8226;   <a href="#idna.core">idna.core</a>
  &#8226;   <a href="#idna.idnadata">idna.idnadata</a>
- &#8226;   <a href="#idna.intranges">idna.intranges</a>
  &#8226;   <a href="#idna.package_data">idna.package_data</a>
 
   </div>
@@ -13958,7 +14486,7 @@ imports:
  &#8226;   <a href="#idna.intranges">idna.intranges</a>
  &#8226;   <a href="#idna.uts46data">idna.uts46data</a>
  &#8226;   <a href="#re">re</a>
- &#8226;   <a href="#typing">typing</a>
+ &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#unicodedata">unicodedata</a>
 
   </div>
@@ -13994,13 +14522,11 @@ imported by:
 imports:
     <a href="#bisect">bisect</a>
  &#8226;   <a href="#idna">idna</a>
- &#8226;   <a href="#typing">typing</a>
 
   </div>
   <div class="import">
 imported by:
-    <a href="#idna">idna</a>
- &#8226;   <a href="#idna.core">idna.core</a>
+    <a href="#idna.core">idna.core</a>
 
   </div>
 
@@ -14028,7 +14554,6 @@ imported by:
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
     <a href="#idna">idna</a>
- &#8226;   <a href="#typing">typing</a>
 
   </div>
   <div class="import">
@@ -14090,8 +14615,6 @@ imports:
 imported by:
     <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#_distutils_hack">_distutils_hack</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
  &#8226;   <a href="#click.decorators">click.decorators</a>
  &#8226;   <a href="#comtypes.client._generate">comtypes.client._generate</a>
  &#8226;   <a href="#flask.cli">flask.cli</a>
@@ -16013,7 +16536,6 @@ imports:
   <div class="import">
 imported by:
     <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
  &#8226;   <a href="#flask.config">flask.config</a>
  &#8226;   <a href="#flask.json">flask.json</a>
  &#8226;   <a href="#flask.scaffold">flask.scaffold</a>
@@ -16207,9 +16729,9 @@ imported by:
  &#8226;   <a href="#asyncio.futures">asyncio.futures</a>
  &#8226;   <a href="#asyncio.log">asyncio.log</a>
  &#8226;   <a href="#bs4.dammit">bs4.dammit</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.codingstatemachine">chardet.codingstatemachine</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
  &#8226;   <a href="#comtypes">comtypes</a>
  &#8226;   <a href="#comtypes._comobject">comtypes._comobject</a>
  &#8226;   <a href="#comtypes.client">comtypes.client</a>
@@ -17395,7 +17917,6 @@ imported by:
     <a href="#PyInstaller.depend.dylib">PyInstaller.depend.dylib</a>
  &#8226;   <a href="#PyInstaller.depend.imphook">PyInstaller.depend.imphook</a>
  &#8226;   <a href="#PyInstaller.utils.win32.icon">PyInstaller.utils.win32.icon</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
  &#8226;   <a href="#distutils.file_util">distutils.file_util</a>
  &#8226;   <a href="#numpy.core.memmap">numpy.core.memmap</a>
  &#8226;   <a href="#os">os</a>
@@ -21481,7 +22002,7 @@ imported by:
   <a target="code" href="" type="text/plain"><tt>org</tt></a>
 <span class="moduletype">MissingModule</span>  <div class="import">
 imported by:
-    <a href="#pickle">pickle</a>
+    <a href="#copy">copy</a>
 
   </div>
 
@@ -21572,7 +22093,6 @@ imported by:
  &#8226;   <a href="#bz2">bz2</a>
  &#8226;   <a href="#certifi.core">certifi.core</a>
  &#8226;   <a href="#cgi">cgi</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
  &#8226;   <a href="#click._compat">click._compat</a>
  &#8226;   <a href="#click._termui_impl">click._termui_impl</a>
  &#8226;   <a href="#click.core">click.core</a>
@@ -22252,14 +22772,14 @@ imported by:
   <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/pickle.py" type="text/plain"><tt>pickle</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#_compat_pickle">_compat_pickle</a>
+    <a href="#'org.python'">'org.python'</a>
+ &#8226;   <a href="#_compat_pickle">_compat_pickle</a>
  &#8226;   <a href="#_pickle">_pickle</a>
  &#8226;   <a href="#codecs">codecs</a>
  &#8226;   <a href="#copyreg">copyreg</a>
  &#8226;   <a href="#functools">functools</a>
  &#8226;   <a href="#io">io</a>
  &#8226;   <a href="#itertools">itertools</a>
- &#8226;   <a href="#org">org</a>
  &#8226;   <a href="#pprint">pprint</a>
  &#8226;   <a href="#re">re</a>
  &#8226;   <a href="#struct">struct</a>
@@ -25119,15 +25639,13 @@ imported by:
  &#8226;   <a href="#argparse">argparse</a>
  &#8226;   <a href="#base64">base64</a>
  &#8226;   <a href="#bs4">bs4</a>
- &#8226;   <a href="#bs4.builder">bs4.builder</a>
  &#8226;   <a href="#bs4.builder._html5lib">bs4.builder._html5lib</a>
  &#8226;   <a href="#bs4.builder._htmlparser">bs4.builder._htmlparser</a>
  &#8226;   <a href="#bs4.dammit">bs4.dammit</a>
  &#8226;   <a href="#bs4.element">bs4.element</a>
  &#8226;   <a href="#cgi">cgi</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
+ &#8226;   <a href="#chardet.charsetprober">chardet.charsetprober</a>
+ &#8226;   <a href="#chardet.universaldetector">chardet.universaldetector</a>
  &#8226;   <a href="#click._compat">click._compat</a>
  &#8226;   <a href="#click.shell_completion">click.shell_completion</a>
  &#8226;   <a href="#click.utils">click.utils</a>
@@ -25379,7 +25897,6 @@ imported by:
 <span class="moduletype">Package</span>  <div class="import">
 imports:
     <a href="#chardet">chardet</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
  &#8226;   <a href="#cryptography">cryptography</a>
  &#8226;   <a href="#logging">logging</a>
  &#8226;   <a href="#requests">requests</a>
@@ -25402,7 +25919,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#pywhatkit.core.core">pywhatkit.core.core</a>
+    <a href="#Google">Google</a>
+ &#8226;   <a href="#pywhatkit.core.core">pywhatkit.core.core</a>
  &#8226;   <a href="#pywhatkit.handwriting">pywhatkit.handwriting</a>
  &#8226;   <a href="#pywhatkit.misc">pywhatkit.misc</a>
  &#8226;   <a href="#requests">requests</a>
@@ -25569,7 +26087,6 @@ imports:
     <a href="#Cookie">Cookie</a>
  &#8226;   <a href="#StringIO">StringIO</a>
  &#8226;   <a href="#chardet">chardet</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
  &#8226;   <a href="#collections">collections</a>
  &#8226;   <a href="#collections.Callable">collections.Callable</a>
  &#8226;   <a href="#collections.Mapping">collections.Mapping</a>
@@ -25721,11 +26238,8 @@ imported by:
   <a target="code" href="///C:/Users/user/AppData/Local/Programs/Python/Python310/lib/site-packages/requests/packages.py" type="text/plain"><tt>requests.packages</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#chardet">chardet</a>
- &#8226;   <a href="#charset_normalizer">charset_normalizer</a>
- &#8226;   <a href="#requests">requests</a>
+    <a href="#requests">requests</a>
  &#8226;   <a href="#sys">sys</a>
- &#8226;   <a href="#warnings">warnings</a>
 
   </div>
   <div class="import">
@@ -25835,7 +26349,6 @@ imports:
  &#8226;   <a href="#struct">struct</a>
  &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#tempfile">tempfile</a>
- &#8226;   <a href="#urllib3.util">urllib3.util</a>
  &#8226;   <a href="#warnings">warnings</a>
  &#8226;   <a href="#winreg">winreg</a>
  &#8226;   <a href="#zipfile">zipfile</a>
@@ -26293,16 +26806,16 @@ imported by:
 
 <div class="node">
   <a name="sounds"></a>
-  <a target="code" href="///D:/Documents/Repositories/DesktopAssistant/sounds.py" type="text/plain"><tt>sounds</tt></a>
+  <a target="code" href="///D:/Documents/Repositories/ALICE/sounds.py" type="text/plain"><tt>sounds</tt></a>
 <span class="moduletype">SourceModule</span>  <div class="import">
 imports:
-    <a href="#Listener">Listener</a>
- &#8226;   <a href="#playsound">playsound</a>
+    <a href="#playsound">playsound</a>
 
   </div>
   <div class="import">
 imported by:
     <a href="#ALICE">ALICE</a>
+ &#8226;   <a href="#Google">Google</a>
 
   </div>
 
@@ -27063,6 +27576,7 @@ imported by:
  &#8226;   <a href="#gzip">gzip</a>
  &#8226;   <a href="#http.client">http.client</a>
  &#8226;   <a href="#http.server">http.server</a>
+ &#8226;   <a href="#idna.core">idna.core</a>
  &#8226;   <a href="#imp">imp</a>
  &#8226;   <a href="#importlib">importlib</a>
  &#8226;   <a href="#importlib._bootstrap_external">importlib._bootstrap_external</a>
@@ -28059,13 +28573,6 @@ imported by:
  &#8226;   <a href="#PyInstaller.utils.hooks">PyInstaller.utils.hooks</a>
  &#8226;   <a href="#PyInstaller.utils.hooks.conda">PyInstaller.utils.hooks.conda</a>
  &#8226;   <a href="#asyncio.staggered">asyncio.staggered</a>
- &#8226;   <a href="#charset_normalizer.api">charset_normalizer.api</a>
- &#8226;   <a href="#charset_normalizer.cd">charset_normalizer.cd</a>
- &#8226;   <a href="#charset_normalizer.constant">charset_normalizer.constant</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
- &#8226;   <a href="#charset_normalizer.md">charset_normalizer.md</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
- &#8226;   <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
  &#8226;   <a href="#click._compat">click._compat</a>
  &#8226;   <a href="#click._termui_impl">click._termui_impl</a>
  &#8226;   <a href="#click._textwrap">click._textwrap</a>
@@ -28099,9 +28606,6 @@ imported by:
  &#8226;   <a href="#flask.typing">flask.typing</a>
  &#8226;   <a href="#flask.wrappers">flask.wrappers</a>
  &#8226;   <a href="#functools">functools</a>
- &#8226;   <a href="#idna.core">idna.core</a>
- &#8226;   <a href="#idna.intranges">idna.intranges</a>
- &#8226;   <a href="#idna.uts46data">idna.uts46data</a>
  &#8226;   <a href="#importlib._common">importlib._common</a>
  &#8226;   <a href="#importlib.abc">importlib.abc</a>
  &#8226;   <a href="#importlib.metadata">importlib.metadata</a>
@@ -28285,8 +28789,7 @@ imported by:
   <a name="unicodedata"></a>
   <tt>unicodedata</tt> <span class="moduletype"><tt>C:\Users\user\AppData\Local\Programs\Python\Python310\DLLs\unicodedata.pyd</tt></span>  <div class="import">
 imported by:
-    <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
- &#8226;   <a href="#encodings.idna">encodings.idna</a>
+    <a href="#encodings.idna">encodings.idna</a>
  &#8226;   <a href="#idna.core">idna.core</a>
  &#8226;   <a href="#setuptools.unicode_utils">setuptools.unicode_utils</a>
  &#8226;   <a href="#soupsieve.css_match">soupsieve.css_match</a>
@@ -28295,17 +28798,6 @@ imported by:
  &#8226;   <a href="#test.support.os_helper">test.support.os_helper</a>
  &#8226;   <a href="#urllib.parse">urllib.parse</a>
  &#8226;   <a href="#werkzeug.utils">werkzeug.utils</a>
-
-  </div>
-
-</div>
-
-<div class="node">
-  <a name="unicodedata2"></a>
-  <a target="code" href="" type="text/plain"><tt>unicodedata2</tt></a>
-<span class="moduletype">MissingModule</span>  <div class="import">
-imported by:
-    <a href="#charset_normalizer.utils">charset_normalizer.utils</a>
 
   </div>
 
@@ -29526,7 +30018,6 @@ imports:
 imported by:
     <a href="#requests.adapters">requests.adapters</a>
  &#8226;   <a href="#requests.models">requests.models</a>
- &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#urllib3.connection">urllib3.connection</a>
  &#8226;   <a href="#urllib3.contrib.pyopenssl">urllib3.contrib.pyopenssl</a>
  &#8226;   <a href="#urllib3.util.connection">urllib3.util.connection</a>
@@ -29937,13 +30428,10 @@ imported by:
  &#8226;   <a href="#asyncio.unix_events">asyncio.unix_events</a>
  &#8226;   <a href="#asyncio.windows_utils">asyncio.windows_utils</a>
  &#8226;   <a href="#bs4">bs4</a>
- &#8226;   <a href="#bs4.builder">bs4.builder</a>
  &#8226;   <a href="#bs4.builder._html5lib">bs4.builder._html5lib</a>
  &#8226;   <a href="#bs4.builder._htmlparser">bs4.builder._htmlparser</a>
  &#8226;   <a href="#bs4.element">bs4.element</a>
  &#8226;   <a href="#cgi">cgi</a>
- &#8226;   <a href="#charset_normalizer.legacy">charset_normalizer.legacy</a>
- &#8226;   <a href="#charset_normalizer.models">charset_normalizer.models</a>
  &#8226;   <a href="#codeop">codeop</a>
  &#8226;   <a href="#comtypes.tools.codegenerator">comtypes.tools.codegenerator</a>
  &#8226;   <a href="#comtypes.tools.tlbparser">comtypes.tools.tlbparser</a>
@@ -30048,7 +30536,6 @@ imported by:
  &#8226;   <a href="#random">random</a>
  &#8226;   <a href="#requests">requests</a>
  &#8226;   <a href="#requests.auth">requests.auth</a>
- &#8226;   <a href="#requests.packages">requests.packages</a>
  &#8226;   <a href="#requests.utils">requests.utils</a>
  &#8226;   <a href="#run.py">run.py</a>
  &#8226;   <a href="#runpy">runpy</a>
@@ -31216,8 +31703,7 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#ALICE">ALICE</a>
- &#8226;   <a href="#pywhatkit.misc">pywhatkit.misc</a>
+    <a href="#pywhatkit.misc">pywhatkit.misc</a>
  &#8226;   <a href="#wikipedia.exceptions">wikipedia.exceptions</a>
  &#8226;   <a href="#wikipedia.util">wikipedia.util</a>
  &#8226;   <a href="#wikipedia.wikipedia">wikipedia.wikipedia</a>

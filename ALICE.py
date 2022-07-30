@@ -12,14 +12,16 @@ import Google
 import Listener
 import sounds
 
-def run(): #insert via priotiy command keyword
+# Main Function
+def run():
     try:
 
-        textCommand = Listener.take_command()
+        textCommand = Listener.take_command()                       # Fetch the returned speech input
         print(textCommand)
         try:
             print("ALICE is listening...")
 
+# Play Youtube
             if 'play' in textCommand:
                 sounds.soundListening()
                 song = textCommand.replace('play', '')
@@ -27,6 +29,7 @@ def run(): #insert via priotiy command keyword
                 pywhatkit.playonyt(song)
                 sounds.soundDone()
 
+# Checking the Date
             elif 'date' in textCommand:
                 sounds.soundListening()
                 today = date.today()
@@ -34,12 +37,14 @@ def run(): #insert via priotiy command keyword
                 Listener.talk('The Date todat is ' + todayDate)
                 sounds.soundDone()
 
+# Checking the Time
             elif 'time' in textCommand:
                 sounds.soundListening()
                 time = datetime.datetime.now().strftime('%I:%M %p')
                 Listener.talk('Current time is ' + time)
                 sounds.soundDone()
 
+# Google (Still Buggy)
             elif 'what' in textCommand:
                 sounds.soundListening()
                 try:
@@ -51,6 +56,7 @@ def run(): #insert via priotiy command keyword
                     Listener.talk("I cannot understand your query.")
                     sounds.soundDone()
 
+# Calculator (Still Buggy)
             elif 'calculate' in textCommand: # fix this
                 equation = textCommand.replace('calculate', '')
                 try:
@@ -60,13 +66,14 @@ def run(): #insert via priotiy command keyword
                 except:
                     Listener.talk("I'm sorry! I cannot calculate that.")
                     sounds.soundDone()
-
+# Shutdown
             elif 'shutdown' in textCommand:
                 sounds.soundListening()
                 Listener.talk('Initiating Shutdown Sequence')
                 print("Initiating Shutdown Sequence...")
                 sounds.soundShutdown()
                 quit()
+
 
             else:
                 Listener.talk("I'm sorry. Can you repeat that?")  # fix engaging when alice is not called
