@@ -13,12 +13,41 @@ def query():
 
     page = requests.get(URL, headers=headers)
     soup = BeautifulSoup(page.content, 'html.parser')
-    result = soup.find(class_='qv3Wpe').get_text()
-    print(result)
+
+
+# Final Code
+    try:
+# Highlighted Result
+        result = soup.find(class_="Z0LcW CfV8xf").get_text()
+        print(result)
+        return result
+    except AttributeError:
+        try:
+# First Result
+            result = soup.find(class_='qv3Wpe').get_text()
+            print(result)
+            return result
+        except AttributeError:
+            try:
+# Side Panel
+                result = soup.find(class_="LGOjhe").get_text()  #
+                print(result)
+                return result
+            except AttributeError:
+                try:
+# Side Panel 2
+                    result = soup.find(class_="kno-rdesc").get_text()
+
+                    print(result)
+                    return result
+                except:
+                    print("Check a new source for result")
+
+
 
 
 while True:
-    try:
-        query()
-    except Exception:
-        print('Sorry no result, please be clear')
+
+    query()
+   # except Exception:
+ #       print('Sorry no result, please be clear')

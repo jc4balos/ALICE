@@ -11,6 +11,7 @@ from datetime import date
 import Google
 import Listener
 import sounds
+import Applications
 
 # Main Function
 def run():
@@ -45,18 +46,18 @@ def run():
                 sounds.soundDone()
 
 # Google (Still Buggy)
-            elif 'what' in textCommand:
+            elif ('who' in textCommand) or ('what' in textCommand) or ('where' in textCommand) or ('when' in textCommand):
                 sounds.soundListening()
                 try:
-                    whatQuestion = textCommand.replace('what', ' ')
-                    info = Google.query(whatQuestion)
+                    searchQuestion = textCommand.replace('what', ' ')
+                    info = Google.query(searchQuestion)
                     Listener.talk(info)
                     sounds.soundDone()
                 except:
                     Listener.talk("I cannot understand your query.")
                     sounds.soundDone()
 
-# Calculator (Still Buggy)
+# Calculator
             elif 'calculate' in textCommand: # fix this
                 equation = textCommand.replace('calculate', '')
                 try:
@@ -66,8 +67,14 @@ def run():
                 except:
                     Listener.talk("I'm sorry! I cannot calculate that.")
                     sounds.soundDone()
+# Application Open/Close
+            elif ('open' in textCommand) or ('close' in textCommand):
+                sounds.soundListening()
+                Applications.open(textCommand)
+                sounds.soundDone()
+
 # Shutdown
-            elif 'shutdown' in textCommand:
+            elif ('shutdown' in textCommand) or ('power off' in textCommand):
                 sounds.soundListening()
                 Listener.talk('Initiating Shutdown Sequence')
                 print("Initiating Shutdown Sequence...")

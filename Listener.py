@@ -29,7 +29,7 @@ def take_command():
             print('listening...')
             voice = listener.listen(source)             # Listen To Speech
             command = listener.recognize_google(voice)  # Use google Web Speech API
-            command = command.lower()                   # Changing Speechs Recognizer input into lowercase
+            command = command.lower()                   # Changing Speech Recognizer input into lowercase
             if 'alice' in command:                      # Checks if "Alice" has been said
                 command = command.replace('alice', '')
 
